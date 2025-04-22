@@ -1,13 +1,25 @@
+import { useNavigate } from "react-router-dom";
+import box from "../assets/box.png";
+import home from "../assets/home.png";
+import user_profile from "../assets/user_profile.png"
 
 function Footer() {
+  const navigate = useNavigate();
   return (
-    <footer className="bg-gray-800 text-white py-4">
-      <div className="container mx-auto text-center">
-        <p className="text-sm">
-          &copy; {new Date().getFullYear()} Your Company Name. All rights reserved.
-        </p>
-      </div>
-    </footer>
+    <div className="fixed bottom-0 left-0 w-full bg-white border-t flex justify-around py-2 z-50">
+  <button onClick = {()=> navigate('/map')}className="flex flex-col items-center text-sm text-gray-500">
+    <img src={box} className="w-6 h-6" />
+    <span>수거</span>
+  </button>
+  <button className="flex flex-col items-center text-sm text-gray-500">
+    <img src={home} className="w-6 h-6" />
+    <span>홈</span>
+  </button>
+  <button className="flex flex-col items-center text-sm text-gray-500">
+    <img src={user_profile} className="w-6 h-6" />
+    <span>마이페이지</span>
+  </button>
+</div>
   );
 }
 
