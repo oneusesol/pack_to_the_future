@@ -1,8 +1,10 @@
 
+import logoImg from '../assets/Splash_logo.png'
+
 function Splash() {
   return (
      <div>
-        <h3>Splash</h3>
+        <img src = {logoImg} alt = 'splash' />
     </div>
   )
 }

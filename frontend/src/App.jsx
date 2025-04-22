@@ -3,7 +3,7 @@ import { BrowserRouter,Routes,Route} from 'react-router-dom';
 import Splash from './pages/splash';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Map from './pages/Map';
+//import Map from './pages/Map';
 
 function App() {
   return (
