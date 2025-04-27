@@ -3,7 +3,7 @@ import { BrowserRouter,Routes,Route} from 'react-router-dom';
 import Splash from './pages/splash';
 import Home from './pages/Home';
 import Login from './pages/Login';
-//import Map from './pages/Map';
+import KakaoMap from './pages/KakaoMap';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Splash />} />
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/map" element={<Map />} />
+        <Route path="/map" element={<KakaoMap />} />
       </Routes>
     </BrowserRouter>
   )
