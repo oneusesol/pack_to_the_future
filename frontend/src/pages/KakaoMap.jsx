@@ -42,8 +42,25 @@ console.log("KAKAO KEY!");
           center: new window.kakao.maps.LatLng(lat, lng),
           level: 3,
         };
-        new window.kakao.maps.Map(container, options);
+        const map = new window.kakao.maps.Map(container, options);
+
+        // 🔥 내 위치에 빨간 점 마커 추가
+        const markerPosition = new window.kakao.maps.LatLng(lat, lng);
+        const markerImage = new window.kakao.maps.MarkerImage(
+          "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_red.png",
+          new window.kakao.maps.Size(40, 40),     // 사이즈 (살짝 줄였어 보기 좋게)
+          {
+            offset: new window.kakao.maps.Point(20, 40),   // 마커 기준점 위치
+          }
+        );
+      
+        const marker = new window.kakao.maps.Marker({
+          position: markerPosition,
+          image: markerImage,
+          map: map,
+        });
       }
+    
     }, []);
   
     return (
