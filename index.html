@@ -1,13 +1,62 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유유팩과 함께하는 미래</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 첫 번째 화면: 소셜 로그인 옵션 -->
+    <div class="container" id="login-options-screen">
+        <div class="login-header">
+            <h1>유유팩과</h1>
+            <h1>함께하는</h1>
+            <h1>미래</h1>
+        </div>
+        
+        <div class="social-login-buttons">
+            <!-- 카카오 로그인 버튼 -->
+            <button id="kakao-login-btn" class="kakao-btn">
+                톡카카오톡으로 로그인
+            </button>
+            
+            <!-- 이메일 로그인 버튼 -->
+            <button id="email-login-btn" class="email-btn">
+                ID/PW로 로그인
+            </button>
+        </div>
+    </div>
+
+    <!-- 두 번째 화면: 이메일 로그인 폼 -->
+    <div class="container" id="email-login-screen" style="display: none;">
+        <div class="login-form-container">
+            <h2>ID로 로그인</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <input type="text" id="user-id" placeholder="ID" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="user-password" placeholder="Password" required>
+                </div>
+                <div class="form-options">
+                    <span id="forgot-id">ID 찾기</span> / <span id="forgot-password">Password 찾기</span>
+                </div>
+                <button type="submit" id="login-submit-btn">로그인</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 세 번째 화면: 로그인 성공 -->
+    <div class="container" id="login-success-screen" style="display: none;">
+        <div class="success-message">
+            <h2>로그인 성공!</h2>
+            <p>환영합니다!</p>
+            <button id="logout-btn">로그아웃</button>
+        </div>
+    </div>
+
+    <!-- 자바스크립트 파일 연결 -->
+    <script src="script.js"></script>
+</body>
 </html>

@@ -1,0 +1,154 @@
+/* 전체 페이지 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* 컨테이너 스타일 */
+.container {
+    width: 100%;
+    max-width: 360px;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    height: 600px;
+}
+
+/* 로그인 헤더 스타일 */
+.login-header {
+    text-align: left;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.login-header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+/* 소셜 로그인 버튼 스타일 */
+.social-login-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 100px;
+}
+
+.social-login-buttons button {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+/* 카카오 로그인 버튼 */
+.kakao-btn {
+    background-color: #FEE500;
+    color: #000000;
+}
+
+/* 이메일 로그인 버튼 */
+.email-btn {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #cccccc !important;
+}
+
+/* 이메일 로그인 폼 스타일 */
+.login-form-container {
+    background-color: #000;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login-form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.form-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.form-options span {
+    cursor: pointer;
+}
+
+#login-submit-btn {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* 로그인 성공 화면 스타일 */
+.success-message {
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.success-message h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#logout-btn {
+    margin-top: 30px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}

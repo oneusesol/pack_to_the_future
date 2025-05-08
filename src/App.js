@@ -1,17 +1,15 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+// App.js
+
+import React from 'react';
+import LoginApp from './LoginPigma';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <LoginApp />  {/* 여기서 실행 */}
+    </div>
   );
 }
 
 export default App;
+
